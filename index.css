@@ -1,0 +1,75 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Night sky background */
+body{
+    height: 100vh;
+    background: radial-gradient(circle at bottom, #1b2735 0%, #090a0f 100%);
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tiny stars using box-shadow trick */
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow:
+        100px 200px white,
+        300px 400px white,
+        500px 150px white,
+        700px 300px white,
+        900px 100px white,
+        1100px 250px white,
+        200px 600px white,
+        400px 700px white,
+        600px 500px white,
+        800px 650px white,
+        1000px 500px white;
+       
+        
+}
+
+/* Center content nicely */
+h1{
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #4cafef;
+    color: white;
+}
+
+button:hover{
+    background-color: #2196f3;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 18px;
+}
